@@ -2950,12 +2950,12 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1732274688}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0.00000011920929}
-  m_ConnectedAnchor: {x: 0.49300194, y: 0}
+  m_ConnectedAnchor: {x: -0.99199915, y: -0.0009999871}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -5903,7 +5903,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 010000
         actionIsOpen: 000000
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: bf83c900fcb1a001fcb1a001
@@ -5981,7 +5981,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 3
+          floatValue: -3
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -7509,7 +7509,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 000000
+        actionIsOpen: 010000
         actionStartIndex: 000000000a0000000d000000
         actionHashCodes: b0327400ff77a904ff77a904
         unityObjectParams: []
@@ -13337,12 +13337,12 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1106908450}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0.00000011920929}
-  m_ConnectedAnchor: {x: 0.49599934, y: 0}
+  m_ConnectedAnchor: {x: -0.019000053, y: -0.0009999871}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -14364,8 +14364,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
+        actionEnabled: 010000
+        actionIsOpen: 010000
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: bf83c900fcb1a001fcb1a001
         unityObjectParams: []
@@ -14375,7 +14375,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 1127893405705639623, guid: 45fa1aa2296af744798ccb32320b7e35, type: 3}
+          value: {fileID: 6943223976572185765, guid: f9857e42f58e40b4f93a79e980fddab8, type: 3}
         - useVariable: 0
           name: 
           tooltip: 
@@ -14442,7 +14442,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: -3
+          floatValue: 3
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -21026,7 +21026,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 010000
         actionIsOpen: 000000
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: bf83c900fcb1a001fcb1a001
@@ -21037,7 +21037,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 1127893405705639623, guid: 45fa1aa2296af744798ccb32320b7e35, type: 3}
+          value: {fileID: 6943223976572185765, guid: f9857e42f58e40b4f93a79e980fddab8, type: 3}
         - useVariable: 0
           name: 
           tooltip: 
@@ -21104,7 +21104,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 3
+          floatValue: -3
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -21337,7 +21337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522623105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.35, y: -3.2, z: 0}
+  m_LocalPosition: {x: 6.35, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1200577047}
@@ -22133,6 +22133,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1731063452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731063453}
+  m_Layer: 0
+  m_Name: PointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1731063453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731063452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7586174, y: -1.2783226, z: -11.0185995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1732274684
 GameObject:
   m_ObjectHideFlags: 0
@@ -22304,7 +22334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788933707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.33, y: -3.2, z: 0}
+  m_LocalPosition: {x: -12.33, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1200577047}
@@ -22350,7 +22380,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 010000
         actionIsOpen: 000000
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: bf83c900fcb1a001fcb1a001
@@ -22425,7 +22455,7 @@ MonoBehaviour:
         fsmObjectParams: []
         fsmVarParams:
         - variableName: 
-          objectType: UnityEngine.Object
+          objectType: 
           useVariable: 0
           type: 0
           floatValue: 3
@@ -22449,7 +22479,7 @@ MonoBehaviour:
             vector4Values: []
             objectReferences: []
         - variableName: 
-          objectType: UnityEngine.Object
+          objectType: 
           useVariable: 0
           type: 0
           floatValue: 13
