@@ -64,3 +64,4 @@ MonoBehaviour:
   events:
   - Spawn
   - Check
+  - Add Points
