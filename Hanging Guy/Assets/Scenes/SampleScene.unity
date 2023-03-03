@@ -7120,7 +7120,7 @@ GameObject:
   - component: {fileID: 576257125}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13584,6 +13584,7 @@ GameObject:
   - component: {fileID: 825058045}
   - component: {fileID: 825058046}
   - component: {fileID: 825058048}
+  - component: {fileID: 825058047}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -13656,6 +13657,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &825058047
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825058044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -501658088, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs: []
 --- !u!70 &825058048
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -20852,6 +20866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362596336}
   - component: {fileID: 1362596335}
+  - component: {fileID: 1362596337}
   m_Layer: 0
   m_Name: Points Collider
   m_TagString: Untagged
@@ -20889,6 +20904,19 @@ Transform:
   m_Father: {fileID: 576257119}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362596337
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362596334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1879487007, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs: []
 --- !u!1 &1438975343
 GameObject:
   m_ObjectHideFlags: 0
@@ -22247,15 +22275,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: PointManager nel tempo
-    startState: Wait
+    startState: Set 0 Points
     states:
     - name: Wait
       description: 
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 202
+        y: 115
         width: 100
         height: 32
       isBreakpoint: 0
@@ -22326,8 +22354,8 @@ MonoBehaviour:
       colorIndex: 5
       position:
         serializedVersion: 2
-        x: 227.39844
-        y: 103.39844
+        x: 379.39844
+        y: 118.39844
         width: 100
         height: 32
       isBreakpoint: 0
@@ -22447,6 +22475,108 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000010000000000000002000000000000000100000001000000000000000200000000000000
         paramByteDataSize: 00000000000000000100000000000000000000000000000001000000000000000000000000000000
+    - name: Set 0 Points
+      description: 
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 54.3125
+        y: 115.39844
+        width: 102
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Wait
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetStringValue
+        - HutongGames.PlayMaker.Actions.setTextmeshProUGUIText
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0000
+        actionStartIndex: 0000000003000000
+        actionHashCodes: c030f103e9f73304
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2067930954}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: Points
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Points
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001200000001000000140000001200000011000000
+        paramName:
+        - stringVariable
+        - stringValue
+        - everyFrame
+        - gameObject
+        - textString
+        - everyFrame
+        paramDataPos: 000000000100000000000000000000000200000000000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -22554,26 +22684,26 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: PointManager Schivate
-    startState: Wait For Trigger
+    startState: Wait For Enter
     states:
-    - name: Wait For Trigger
+    - name: Wait For Exit
       description: 
-      colorIndex: 1
+      colorIndex: 3
       position:
         serializedVersion: 2
-        x: 50
-        y: 116
-        width: 126.8
+        x: 256
+        y: 113
+        width: 105.2
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Add Point
+          name: CheckIfNull
           isSystemEvent: 0
           isGlobal: 0
-        toState: Send Event
+        toState: Check If Null
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -22583,13 +22713,13 @@ MonoBehaviour:
         customNames:
         - 
         actionEnabled: 01
-        actionIsOpen: 01
+        actionIsOpen: 00
         actionStartIndex: 00000000
         actionHashCodes: 49491604
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: Obstacle
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -22629,7 +22759,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Add Point
+        - CheckIfNull
         byteData: 02000000
         arrayParamSizes: 
         arrayParamTypes: []
@@ -22646,11 +22776,11 @@ MonoBehaviour:
         paramByteDataSize: 0000000004000000000000000000000000000000
     - name: Send Event
       description: 
-      colorIndex: 3
+      colorIndex: 5
       position:
         serializedVersion: 2
-        x: 265.39844
-        y: 114.39844
+        x: 62.398438
+        y: 216.39844
         width: 100
         height: 32
       isBreakpoint: 0
@@ -22661,7 +22791,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Wait For Trigger
+        toState: Wait For Enter
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -22749,6 +22879,183 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000000000000000000
         paramByteDataSize: 00000000000000000000000001000000
+    - name: Wait For Enter
+      description: 
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 53
+        y: 112.90625
+        width: 114
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: CheckIfExited
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Wait For Exit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 49491604
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Obstacle
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1362596334}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Obstacle
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - CheckIfExited
+        byteData: 00000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000007000000120000001700000013000000
+        paramName:
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000000000000000000000000000000000000
+        paramByteDataSize: 0000000004000000000000000000000000000000
+    - name: Check If Null
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 262.39844
+        y: 211.49219
+        width: 112.4
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Add Point
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Send Event
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: BackToCheck
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Wait For Enter
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectIsNull
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 15656205
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Obstacle
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - BackToCheck
+        - Add Point
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1300000017000000170000001100000001000000
+        paramName:
+        - gameObject
+        - isNull
+        - isNotNull
+        - storeResult
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -22759,6 +23066,15 @@ MonoBehaviour:
     - name: Add Points
       isSystemEvent: 0
       isGlobal: 1
+    - name: BackToCheck
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: CheckIfExited
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: CheckIfNull
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
@@ -23627,7 +23943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 60, y: -30}
+  m_AnchoredPosition: {x: 60, y: -50}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067930956
