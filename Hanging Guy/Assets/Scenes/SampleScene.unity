@@ -8669,7 +8669,7 @@ MonoBehaviour:
           name: Send Event
           isSystemEvent: 0
           isGlobal: 0
-        toState: Send Event
+        toState: Add Hits
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -11342,7 +11342,7 @@ MonoBehaviour:
           name: Send Event
           isSystemEvent: 0
           isGlobal: 0
-        toState: Send Event
+        toState: Decrease Hits
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -11364,14 +11364,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 0
+        - ownerOption: 1
           gameObject:
             useVariable: 0
             name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 825058044}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -20884,7 +20884,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -22498,15 +22498,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetStringValue
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.ConvertIntToString
         - HutongGames.PlayMaker.Actions.setTextmeshProUGUIText
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0000
-        actionStartIndex: 0000000003000000
-        actionHashCodes: c030f103e9f73304
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 603dd905404de804e9f73304
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -22536,7 +22538,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 
         - useVariable: 1
           name: Points
           tooltip: 
@@ -22548,7 +22550,25 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: Point Number
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Point Number
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -22562,21 +22582,151 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 120000001200000001000000140000001200000011000000
+        paramDataType: 10000000100000000100000010000000120000001200000001000000140000001200000011000000
         paramName:
+        - intVariable
+        - intValue
+        - everyFrame
+        - intVariable
         - stringVariable
-        - stringValue
+        - format
         - everyFrame
         - gameObject
         - textString
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000200000000000000
-        paramByteDataSize: 000000000000000001000000000000000000000000000000
+        paramDataPos: 00000000010000000000000002000000000000000100000001000000000000000200000000000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000001000000000000000000000000000000
+    - name: Add Points 2
+      description: 
+      colorIndex: 5
+      position:
+        serializedVersion: 2
+        x: 371.79688
+        y: 206.875
+        width: 106
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Wait
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.ConvertIntToString
+        - HutongGames.PlayMaker.Actions.setTextmeshProUGUIText
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 603dd905404de804e9f73304
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2067930954}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: Points
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: Points
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: Point Number
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 30
+        - useVariable: 1
+          name: Point Number
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 10000000100000000100000010000000120000001200000001000000140000001200000011000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        - intVariable
+        - stringVariable
+        - format
+        - everyFrame
+        - gameObject
+        - textString
+        - everyFrame
+        paramDataPos: 00000000010000000000000002000000000000000100000001000000000000000200000000000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000001000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -22589,27 +22739,15 @@ MonoBehaviour:
         name: Add Points
         isSystemEvent: 0
         isGlobal: 1
-      toState: Add Points
+      toState: Add Points 2
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
     variables:
       floatVariables: []
-      intVariables:
-      - useVariable: 1
-        name: Point Number
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
+      intVariables: []
       boolVariables: []
-      stringVariables:
-      - useVariable: 1
-        name: Points
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 
+      stringVariables: []
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -22623,7 +22761,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 
     description: 
     docUrl: 
     showStateLabel: 0
@@ -22801,7 +22939,7 @@ MonoBehaviour:
         customNames:
         - 
         actionEnabled: 01
-        actionIsOpen: 01
+        actionIsOpen: 00
         actionStartIndex: 00000000
         actionHashCodes: 5e69bb04
         unityObjectParams: []
@@ -23150,9 +23288,21 @@ MonoBehaviour:
     globalTransitions: []
     variables:
       floatVariables: []
-      intVariables: []
+      intVariables:
+      - useVariable: 1
+        name: Point Number
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Points
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -23172,7 +23322,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
