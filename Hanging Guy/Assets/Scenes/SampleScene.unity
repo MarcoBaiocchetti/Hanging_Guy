@@ -400,7 +400,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -625,7 +625,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Stato 3
+        toState: Stato 4
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -638,7 +638,6 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
-        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.ConvertIntToString
         - HutongGames.PlayMaker.Actions.ConvertStringToInt
@@ -653,11 +652,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010101010101010101
-        actionIsOpen: 0000000000000000000000
-        actionStartIndex: 000000000300000005000000070000000b0000000f00000013000000170000001b0000001e00000022000000
-        actionHashCodes: 9ff80c025ac852045ac8520487aa970087aa970087aa970087aa97005e69bb0448c01101404de80479de8100
+        actionEnabled: 01010101010101010101
+        actionIsOpen: 00000000000000000000
+        actionStartIndex: 000000000300000005000000070000000b0000000f00000013000000170000001a0000001e000000
+        actionHashCodes: 9ff80c025ac852045ac8520487aa970087aa970087aa970087aa970048c01101404de80479de8100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -702,39 +700,7 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams:
-        - target: 2
-          excludeSelf:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          gameObject:
-            ownerOption: 1
-            gameObject:
-              useVariable: 0
-              name: 
-              tooltip: 
-              showInInspector: 0
-              networkSync: 0
-              value: {fileID: 1731063452}
-          fsmName:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: Check if Record
-          sendToChildren:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          fsmComponent: {fileID: 0}
+        fsmEventTargetParams: []
         fsmPropertyParams:
         - TargetObject:
             useVariable: 0
@@ -1060,12 +1026,6 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 1
         fsmIntParams:
         - useVariable: 1
@@ -1141,14 +1101,13 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Actual Record
         - FINISHED
-        byteData: 000000000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000000f0000001100000024000000010000002400000001000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000011000000110000001f000000170000000f000000010000000f000000170000000100000010000000120000001200000001000000120000001000000001000000
+        paramDataType: 130000000f0000001100000024000000010000002400000001000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000011000000110000000f000000170000000100000010000000120000001200000001000000120000001000000001000000
         paramName:
         - gameObject
         - delay
@@ -1173,10 +1132,6 @@ MonoBehaviour:
         - fsmName
         - enable
         - resetOnExit
-        - eventTarget
-        - sendEvent
-        - delay
-        - everyFrame
         - time
         - finishEvent
         - realTime
@@ -1187,8 +1142,8 @@ MonoBehaviour:
         - stringVariable
         - intVariable
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000100000001000000000000000000000001000000020000000100000001000000030000000400000002000000020000000500000006000000030000000300000007000000080000000000000000000000010000000200000002000000010000000300000000000000040000000500000004000000060000000100000005000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000001000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000000000001000000010000000000000000000000010000000200000001000000010000000300000004000000020000000200000005000000060000000300000003000000070000000800000001000000000000000200000000000000040000000500000003000000060000000100000004000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000001000000
     - name: Stato 2
       description: 
       colorIndex: 0
@@ -2862,14 +2817,14 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000400000001000000010000000000000000000000000000000000000000000000010000000000000008000000000000000c0000001000000011000000010000000000000001000000
         paramByteDataSize: 040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000000000000000000000000000
-    - name: Change string and int
+    - name: Stato 4
       description: 
-      colorIndex: 7
+      colorIndex: 0
       position:
         serializedVersion: 2
-        x: 281.0703
-        y: 172.79688
-        width: 158
+        x: 295.20312
+        y: 163.39844
+        width: 100
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -2885,84 +2840,88 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ConvertIntToString
-        - HutongGames.PlayMaker.Actions.ConvertStringToInt
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0000
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 404de80479de8100
+        actionEnabled: 01
+        actionIsOpen: 00
+        actionStartIndex: 00000000
+        actionHashCodes: 5e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 1731063452}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: Check if Record
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 1
-          name: Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
-        - useVariable: 1
-          name: Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: Point Number
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 0
-        - useVariable: 1
-          name: Number Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 0000
+        stringParams:
+        - Actual Record
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000120000001200000001000000120000001000000001000000
+        paramDataType: 1f000000170000000f00000001000000
         paramName:
-        - intVariable
-        - stringVariable
-        - format
+        - eventTarget
+        - sendEvent
+        - delay
         - everyFrame
-        - stringVariable
-        - intVariable
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000020000000100000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -4304,7 +4263,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Stato 3
+        toState: Stato 4
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4317,7 +4276,6 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
-        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.ConvertIntToString
         - HutongGames.PlayMaker.Actions.ConvertStringToInt
@@ -4332,11 +4290,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010101010101010101
-        actionIsOpen: 0000000000000000000000
-        actionStartIndex: 000000000300000005000000070000000b0000000f00000013000000170000001b0000001e00000022000000
-        actionHashCodes: 9ff80c025ac852045ac8520487aa970087aa970087aa970087aa97005e69bb0448c01101404de80479de8100
+        actionEnabled: 01010101010101010101
+        actionIsOpen: 00000000000000000000
+        actionStartIndex: 000000000300000005000000070000000b0000000f00000013000000170000001a0000001e000000
+        actionHashCodes: 9ff80c025ac852045ac8520487aa970087aa970087aa970087aa970048c01101404de80479de8100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -4381,39 +4338,7 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams:
-        - target: 2
-          excludeSelf:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          gameObject:
-            ownerOption: 1
-            gameObject:
-              useVariable: 0
-              name: 
-              tooltip: 
-              showInInspector: 0
-              networkSync: 0
-              value: {fileID: 1731063452}
-          fsmName:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: Check if Record
-          sendToChildren:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          fsmComponent: {fileID: 0}
+        fsmEventTargetParams: []
         fsmPropertyParams:
         - TargetObject:
             useVariable: 0
@@ -4739,12 +4664,6 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 1
         fsmIntParams:
         - useVariable: 1
@@ -4820,14 +4739,13 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Actual Record
         - FINISHED
-        byteData: 000000000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000000f0000001100000024000000010000002400000001000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000011000000110000001f000000170000000f000000010000000f000000170000000100000010000000120000001200000001000000120000001000000001000000
+        paramDataType: 130000000f0000001100000024000000010000002400000001000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000011000000110000000f000000170000000100000010000000120000001200000001000000120000001000000001000000
         paramName:
         - gameObject
         - delay
@@ -4852,10 +4770,6 @@ MonoBehaviour:
         - fsmName
         - enable
         - resetOnExit
-        - eventTarget
-        - sendEvent
-        - delay
-        - everyFrame
         - time
         - finishEvent
         - realTime
@@ -4866,8 +4780,8 @@ MonoBehaviour:
         - stringVariable
         - intVariable
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000100000001000000000000000000000001000000020000000100000001000000030000000400000002000000020000000500000006000000030000000300000007000000080000000000000000000000010000000200000002000000010000000300000000000000040000000500000004000000060000000100000005000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000001000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000000000001000000010000000000000000000000010000000200000001000000010000000300000004000000020000000200000005000000060000000300000003000000070000000800000001000000000000000200000000000000040000000500000003000000060000000100000004000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000001000000
     - name: Stato 2
       description: 
       colorIndex: 0
@@ -6541,14 +6455,14 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000400000001000000010000000000000000000000000000000000000000000000010000000000000008000000000000000c0000001000000011000000010000000000000001000000
         paramByteDataSize: 040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000000000000000000000000000
-    - name: Change string and int
+    - name: Stato 4
       description: 
-      colorIndex: 7
+      colorIndex: 0
       position:
         serializedVersion: 2
-        x: 255.89844
-        y: 173.80469
-        width: 158
+        x: 321.20312
+        y: 169.40625
+        width: 100
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -6564,84 +6478,88 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ConvertIntToString
-        - HutongGames.PlayMaker.Actions.ConvertStringToInt
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0000
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 404de80479de8100
+        actionEnabled: 01
+        actionIsOpen: 00
+        actionStartIndex: 00000000
+        actionHashCodes: 5e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 1731063452}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: Check if Record
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 1
-          name: Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
-        - useVariable: 1
-          name: Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: Point Number
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 0
-        - useVariable: 1
-          name: Number Points Made
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 0000
+        stringParams:
+        - Actual Record
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000120000001200000001000000120000001000000001000000
+        paramDataType: 1f000000170000000f00000001000000
         paramName:
-        - intVariable
-        - stringVariable
-        - format
+        - eventTarget
+        - sendEvent
+        - delay
         - everyFrame
-        - stringVariable
-        - intVariable
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000020000000100000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -27668,7 +27586,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.8
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -27813,7 +27731,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.5
+          value: 0.3
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -27958,7 +27876,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.5
+          value: 0.3
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -28032,7 +27950,7 @@ MonoBehaviour:
         customNames:
         - 
         actionEnabled: 01
-        actionIsOpen: 00
+        actionIsOpen: 01
         actionStartIndex: 00000000
         actionHashCodes: 8d824400
         unityObjectParams:
@@ -28095,7 +28013,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.8
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -28396,7 +28314,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0000
+        actionIsOpen: 0001
         actionStartIndex: 0000000003000000
         actionHashCodes: e9f7330479de8100
         unityObjectParams: []
