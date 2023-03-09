@@ -39,6 +39,24 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: Point Record
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Number Points Made
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Number Actual Record
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables:
     - useVariable: 1
       name: IsAPressed?
@@ -55,6 +73,24 @@ MonoBehaviour:
     stringVariables:
     - useVariable: 1
       name: Points
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: Record Points
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: Points Made
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: Actual Record
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -78,8 +114,10 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - Spawn
   - Check
   - Add Points
+  - Add 10
+  - Actual Record

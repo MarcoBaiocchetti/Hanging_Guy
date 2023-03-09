@@ -6271,16 +6271,14 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Rotate
         - HutongGames.PlayMaker.Actions.GetKeyUp
         - HutongGames.PlayMaker.Actions.GetKeyDown
-        - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
         - 
         - 
         - 
-        - 
-        actionEnabled: 01010101
-        actionIsOpen: 00000001
-        actionStartIndex: 000000000a0000000d00000010000000
-        actionHashCodes: b0327400ff77a904ff77a9045ac85204
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 000000000a0000000d000000
+        actionHashCodes: b0327400ff77a904ff77a904
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6296,139 +6294,7 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 355630882}
-          TargetTypeName: UnityEngine.Rigidbody2D
-          PropertyName: gravityScale
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          EnumParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            enumName: HutongGames.PlayMaker.None
-            intValue: 0
-          ArrayParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: UnityEngine.Object
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-          setProperty: 1
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
@@ -6482,12 +6348,12 @@ MonoBehaviour:
         stringParams:
         - GoBackToCheck
         - Go right
-        byteData: 0100000001010000610000006400000000
+        byteData: 01000000010100006100000064000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f00000007000000010000000100000001000000010000000700000017000000110000000700000017000000110000002400000001000000
+        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000010000000100000001000000070000001700000011000000070000001700000011000000
         paramName:
         - gameObject
         - vector
@@ -6505,10 +6371,8 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        - targetProperty
-        - everyFrame
-        paramDataPos: 000000000000000000000000010000000200000000000000040000000500000006000000070000000800000000000000000000000c00000001000000010000000000000010000000
-        paramByteDataSize: 000000000000000000000000000000000000000004000000010000000100000001000000010000000400000000000000000000000400000000000000000000000000000001000000
+        paramDataPos: 000000000000000000000000010000000200000000000000040000000500000006000000070000000800000000000000000000000c0000000100000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000010000000100000001000000040000000000000000000000040000000000000000000000
     - name: Right
       description: 
       colorIndex: 5
@@ -6543,16 +6407,14 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Rotate
         - HutongGames.PlayMaker.Actions.GetKeyUp
         - HutongGames.PlayMaker.Actions.GetKeyDown
-        - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
         - 
         - 
         - 
-        - 
-        actionEnabled: 01010101
-        actionIsOpen: 00000001
-        actionStartIndex: 000000000a0000000d00000010000000
-        actionHashCodes: b0327400ff77a904ff77a9045ac85204
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 000000000a0000000d000000
+        actionHashCodes: b0327400ff77a904ff77a904
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -6568,139 +6430,7 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 355630882}
-          TargetTypeName: UnityEngine.Rigidbody2D
-          PropertyName: gravityScale
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          EnumParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            enumName: HutongGames.PlayMaker.None
-            intValue: 0
-          ArrayParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: UnityEngine.Object
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-          setProperty: 1
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
@@ -6754,12 +6484,12 @@ MonoBehaviour:
         stringParams:
         - GoBackToCheck
         - Go Left
-        byteData: 0100000001010000640000006100000000
+        byteData: 01000000010100006400000061000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f00000007000000010000000100000001000000010000000700000017000000110000000700000017000000110000002400000001000000
+        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000010000000100000001000000070000001700000011000000070000001700000011000000
         paramName:
         - gameObject
         - vector
@@ -6777,10 +6507,8 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        - targetProperty
-        - everyFrame
-        paramDataPos: 000000000000000000000000010000000200000000000000040000000500000006000000070000000800000000000000000000000c00000001000000010000000000000010000000
-        paramByteDataSize: 000000000000000000000000000000000000000004000000010000000100000001000000010000000400000000000000000000000400000000000000000000000000000001000000
+        paramDataPos: 000000000000000000000000010000000200000000000000040000000500000006000000070000000800000000000000000000000c0000000100000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000010000000100000001000000040000000000000000000000040000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
