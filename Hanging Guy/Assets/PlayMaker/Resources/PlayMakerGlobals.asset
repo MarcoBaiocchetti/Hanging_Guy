@@ -26,6 +26,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 1
+    - useVariable: 1
+      name: Birds Time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Obstacle Time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     intVariables:
     - useVariable: 1
       name: Hits
@@ -126,7 +138,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - Spawn
   - Check
