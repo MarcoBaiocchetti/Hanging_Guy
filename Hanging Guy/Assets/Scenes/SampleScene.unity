@@ -7933,7 +7933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &559525095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18038,14 +18038,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntCompare
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 000000000600000009000000
-        actionHashCodes: 09faa1029845b305b2cf1000
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 00000000
+        actionStartIndex: 0000000006000000090000000e000000
+        actionHashCodes: 09faa1029845b305b2cf1000b2cf1000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18057,6 +18059,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 259194224}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 559525094}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -18107,6 +18117,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -18116,12 +18138,12 @@ MonoBehaviour:
         - 
         - 
         - New Step
-        byteData: 01000000
+        byteData: 010000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1000000010000000170000001700000017000000010000000f0000000f000000010000001400000011000000110000000100000001000000
+        paramDataType: 1000000010000000170000001700000017000000010000000f0000000f0000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
         paramName:
         - integer1
         - integer2
@@ -18137,8 +18159,13 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000001000000000000000100000002000000000000000000000001000000010000000000000000000000010000000200000003000000
-        paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000010000000000000000000000000000000100000001000000
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 00000000010000000000000001000000020000000000000000000000010000000100000000000000000000000100000002000000030000000100000002000000030000000400000005000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
     - name: First Step
       description: 
       colorIndex: 0
