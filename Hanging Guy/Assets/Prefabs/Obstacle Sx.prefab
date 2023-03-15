@@ -75,11 +75,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -5091828049805951605, guid: 11a2158aef2e1cd4aa4dd4e32e4a3689, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -125,7 +125,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.56, y: 1.02}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
-    handleTriggerEnter2D: 1
+    handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
     handleCollisionEnter2D: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 1
+    handleFixedUpdate: 0
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
